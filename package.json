@@ -4,7 +4,10 @@
   "description": "This is a webpack plugin designed to exploit the V8 engines treatment of functions with parens wrapped around them. This lazy loads the parsing decreasing initial load time. — Edit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Sorry no tests yet\"",
+    "preversion": "npm test",
+    "version": "git add -A dist",
+    "postversion": "git push && git push --tags && npm publish ./"
   },
   "repository": {
     "type": "git",
