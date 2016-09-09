@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Sorry no tests yet\"",
     "preversion": "npm test",
-    "version": "git add -A dist",
+    "version": "git add .",
     "postversion": "git push && git push --tags && npm publish ./"
   },
   "repository": {
