@@ -34,4 +34,4 @@ This plugin is desgined specifically for the V8 engine, so don't expect to have 
 
 ## Further Reading
 
-- [Initial discussion in Rollup Repository]https://github.com/rollup/rollup/pull/774
+- [Initial discussion in Rollup Repository](https://github.com/rollup/rollup/pull/774)
