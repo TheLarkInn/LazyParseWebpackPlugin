@@ -2,7 +2,7 @@
   "name": "v8-lazy-parse-webpack-plugin",
   "version": "0.0.1",
   "description": "This is a webpack plugin designed to exploit the V8 engines treatment of functions with parens wrapped around them. This lazy loads the parsing decreasing initial load time. — Edit",
-  "main": "V8LazyParseWebpackPlugin.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

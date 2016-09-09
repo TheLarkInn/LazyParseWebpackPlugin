@@ -1,6 +1,6 @@
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
+	Authors: Sean Larkin @thelarkinn, Tobias Koppers @sokra
 */
 var ConcatSource = require("webpack-sources").ConcatSource;
 var PrefixSource = require("webpack-sources").PrefixSource;
