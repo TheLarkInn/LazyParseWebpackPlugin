@@ -2,6 +2,8 @@
 
 This is a webpack plugin designed to exploit the V8 engines treatment of functions with parens wrapped around them. This lazy loads the parsing decreasing initial load time. 
 
+# EXPERIMENTAL WIP: this is highly experimental so please report issues for whatever you come across. 
+
 ## Install
 
 To install run the following npm install command: 
