@@ -1,6 +1,6 @@
 {
   "name": "v8-lazy-parse-webpack-plugin",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "This is a webpack plugin designed to exploit the V8 engines treatment of functions with parens wrapped around them. This lazy loads the parsing decreasing initial load time. — Edit",
   "main": "index.js",
   "scripts": {
