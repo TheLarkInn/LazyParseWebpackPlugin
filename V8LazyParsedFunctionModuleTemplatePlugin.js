@@ -22,7 +22,15 @@ V8LazyParsedFunctionModuleTemplatePlugin.prototype.apply = function(moduleTempla
 		return source;
 	});
 	moduleTemplate.plugin("package", function(moduleSource, module) {
-		moduleSource.children = [moduleSource.children[2]];
+		debugger;
+		if (moduleSource.children.length === 4) {
+			moduleSource.children = [moduleSource.children[2]];
+		} else if (moduleSource.children.length === 3) {
+			moduleSource.children = [moduleSource.children[1]];
+		}
+
+
+
 		if(this.outputOptions.pathinfo) {
 			var source = new ConcatSource();
 			var req = module.readableIdentifier(this.requestShortener);
