@@ -1,13 +1,11 @@
 # V8LazyParseWebpackPlugin
 
-This is a webpack plugin designed to exploit the V8 engines treatment of functions with parens wrapped around them. This lazy loads the parsing decreasing initial load time. 
-
-# EXPERIMENTAL WIP: this is highly experimental so please report issues for whatever you come across. 
+This is a webpack plugin designed to exploit the V8 engines treatment of functions with parens wrapped around them. This lazy loads the parsing decreasing initial load time. This is experimental.
 
 ## Install
 
-To install run the following npm install command: 
 
+To install run the following npm install command: 
 ```shell
 npm install v8-lazy-parse-webpack-plugin --save-dev 
 ```
@@ -32,6 +30,10 @@ let config = {
 ## Disclaimer
 
 This plugin is desgined specifically for the V8 engine, so don't expect to have the same effect on all browsers or JS engines. 
+
+## UglifyJSPlugin
+
+If you are using UglifyJsPlugin, you must set the optimization `negate_iife` to true if you are going to minimize your code. 
 
 
 ## Further Reading
