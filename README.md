@@ -15,14 +15,14 @@ npm install v8-lazy-parse-webpack-plugin --save-dev
 **webpack.config.js**
 
 ```javascript
-const V8LazyParseWebpackPlugin = require(v8-lazy-parse-webpack-plugin);
+const V8LazyParseWebpackPlugin = require('v8-lazy-parse-webpack-plugin');
 
 module.exports = config;
 
 let config = {
 	/*...*/	
 	plugins: [
-		new V8LazyParseWebpackPlugin();
+		new V8LazyParseWebpackPlugin(),
 	]
 };
 ```
