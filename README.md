@@ -36,7 +36,7 @@ I'm very curious what the performance increase is for this for larger applicatio
 
 ## UglifyJSPlugin
 
-If you are using UglifyJsPlugin, you must set the optimization `negate_iife` to true if you are going to minimize your code. 
+If you are using UglifyJsPlugin, you must set compress option `negate_iife` to false if you are going to minimize your code. 
 
 
 ## Further Reading
