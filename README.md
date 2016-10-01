@@ -38,6 +38,26 @@ I'm very curious what the performance increase is for this for larger applicatio
 
 If you are using UglifyJsPlugin, you must set compress option `negate_iife` to false if you are going to minimize your code. 
 
+```javascript
+new webpack.optimize.UglifyJsPlugin({
+    output: {
+        comments: false
+    },
+    compress: {
+        warnings: false,
+        conditionals: true,
+        unused: true,
+        comparisons: true,
+        sequences: true,
+        dead_code: true,
+        evaluate: true,
+        if_return: true,
+        join_vars: true,
+        negate_iife: false
+    }
+})
+
+```
 
 ## Further Reading
 
