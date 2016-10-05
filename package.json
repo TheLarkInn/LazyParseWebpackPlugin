@@ -4,7 +4,9 @@
   "description": "This is a webpack plugin designed to exploit the V8 engines treatment of functions with parens wrapped around them. This lazy loads the parsing decreasing initial load time. — Edit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Sorry no tests yet\"",
+    "test:debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js --progress --color --config './test/webpack.config.js'",
+    "test:watch": "npm test -- --watch",
+    "test": "ava",
     "preversion": "npm test",
     "version": "git add .",
     "postversion": "git push && git push --tags && npm publish ./"
@@ -28,7 +30,21 @@
   },
   "homepage": "https://github.com/TheLarkInn/V8LazyParseWebpackPlugin#readme",
   "devDependencies": {
-    "webpack": "^2.1.0-beta.22",
+    "ava": "^0.16.0",
+    "nyc": "^8.3.0",
+    "webpack": "^2.1.0-beta.25",
     "webpack-sources": "^0.1.2"
+  },
+  "ava": {
+    "files": [
+      "./test/test.js"
+    ],
+    "source": [
+      "**/*.test.{js,jsx}"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "tap": true,
+    "powerAssert": false
   }
 }
