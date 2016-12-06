@@ -1,6 +1,6 @@
 # V8LazyParseWebpackPlugin
 
-This is a webpack plugin designed to exploit the V8 engines treatment of functions with parens wrapped around them. This lazy loads the parsing decreasing initial load time. This is experimental.
+This is a webpack plugin designed to exploit the V8/Chakra engines treatment of functions with parens wrapped around them. This lazy loads the parsing decreasing initial load time. This is experimental.
 
 ## Install
 
